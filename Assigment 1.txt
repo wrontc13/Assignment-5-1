@@ -1,0 +1,21 @@
+module A
+def a1
+a = 22
+a.even?
+print "This is an even number"
+end
+end
+
+class Sample
+include A
+def a2
+b = 33
+b.odd?
+print "This is an odd number"
+end
+end
+
+samp = Sample.new
+samp.a1
+samp.a2
+gets
